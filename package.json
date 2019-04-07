@@ -1,0 +1,12 @@
+{
+  "name": "strom-op",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "gen": "node ./src/generate.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

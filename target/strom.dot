@@ -1,0 +1,221 @@
+digraph op_tree {
+  labelloc=t;
+  label="Ktorý OP bol u koho novicom";
+  rankdir=BT;
+  newrank=true;
+  n1995_1 [label="Benignus"];
+  n1995_2 [label="Petardus"];
+  n1996_1 [label="Benignus"];
+  n1996_2 [label="Aurélius"];
+  n1996_3 [label="Mikeáš"];
+  n1996_4 [label="Benignus"];
+  n1997_1 [label="Markus"];
+  n1997_2 [label="Macedónius"];
+  n1997_3 [label="Benignus"];
+  n1998_1 [label="Benignus"];
+  n1998_2 [label="Anzelm"];
+  n1998_3 [label="Markus"];
+  n1998_4 [label="Metod"];
+  n1999_1 [label="Benignus"];
+  n1999_2 [label="Bertrand"];
+  n1999_3 [label="Metod"];
+  n1999_4 [label="Aurélius"];
+  n2000_1 [label="Benignus"];
+  n2000_2 [label="Minorián"];
+  n2000_3 [label="Minas"];
+  n2000_4 [label="Metod"];
+  n2001_1 [label="Benignus"];
+  n2001_2 [label="Achileus"];
+  n2001_3 [label="Minorián"];
+  n2001_4 [label="Metod"];
+  n2002_1 [label="Benignus"];
+  n2002_2 [label="Dailon"];
+  n2002_3 [label="Rafael"];
+  n2002_4 [label="Bertrand"];
+  n2003_2 [label="Pankrác"];
+  n2003_3 [label="Pondus"];
+  n2003_4 [label="Jeroboám"];
+  n2003_5 [label="Jonatán"];
+  n2004_2 [label="Pankrác"];
+  n2004_3 [label="Jeroboám"];
+  n2004_4 [label="Pyramus"];
+  n2004_5 [label="Pondus"];
+  n2005_2 [label="Eliáš"];
+  n2005_3 [label="Dailon"];
+  n2005_4 [label="Pondus"];
+  n2005_5 [label="Jeroboám"];
+  n2006_2 [label="Eliáš"];
+  n2006_3 [label="Melleus"];
+  n2006_4 [label="Pondus"];
+  n2006_5 [label="Talbot"];
+  n2007_2 [label="Melleus"];
+  n2007_3 [label="Malfin"];
+  n2007_4 [label="Jeroboám"];
+  n2007_5 [label="Pondus"];
+  n2008_2 [label="Solomon"];
+  n2008_3 [label="Melleus"];
+  n2008_4 [label="Vilinger"];
+  n2008_5 [label="Malfin"];
+  n2009_2 [label="Monachus"];
+  n2009_3 [label="Mortimer"];
+  n2009_4 [label="Malfin"];
+  n2009_5 [label="Servác"];
+  n2010_2 [label="Monachus"];
+  n2010_3 [label="Giacomo"];
+  n2010_4 [label="Platan"];
+  n2010_5 [label="Merakus"];
+  n2011_2 [label="Malchus"];
+  n2011_3 [label="Merakus"];
+  n2011_4 [label="Platan"];
+  n2011_5 [label="Monachus"];
+  n2012_2 [label="Malchus"];
+  n2012_3 [label="Monachus"];
+  n2012_4 [label="Neitos"];
+  n2012_5 [label="Merakus"];
+  n2013_1 [label="Giacomo"];
+  n2013_2 [label="Levidián"];
+  n2013_3 [label="Juvilián"];
+  n2013_4 [label="Tenebrícius"];
+  n2013_5 [label="Neitos"];
+  n2013_6 [label="Benignus"];
+  n2014_1 [label="Giacomo"];
+  n2014_2 [label="Nahum"];
+  n2014_3 [label="Messien"];
+  n2014_4 [label="Neitos"];
+  n2014_5 [label="Áron"];
+  n2014_6 [label="Benignus"];
+  n2015_1 [label="Giacomo"];
+  n2015_2 [label="Áron"];
+  n2015_3 [label="Prozael"];
+  n2015_4 [label="Jozes"];
+  n2015_5 [label="Silas"];
+  n2015_6 [label="Benignus"];
+  n2016_1 [label="Neitos"];
+  n2016_2 [label="Vigo"];
+  n2016_3 [label="Kvintus"];
+  n2016_4 [label="Áron"];
+  n2016_5 [label="Prozael"];
+  n2016_6 [label="Urbion"];
+  n2017_1 [label="Neitos"];
+  n2017_2 [label="Parmenides"];
+  n2017_3 [label="Vigo"];
+  n2017_4 [label="Celestín"];
+  n2017_5 [label="Šaulon"];
+  n2017_6 [label="Urbion"];
+  n2018_1 [label="Áron"];
+  n2018_2 [label="Parmenides"];
+  n2018_3 [label="Doctus"];
+  n2018_4 [label="Pronsias"];
+  n2018_5 [label="Mikabeus"];
+  n2018_6 [label="Urbion"];
+  n2019_1 [label="Monachus"];
+  n2019_2 [label="Avenárius"];
+  n2019_3 [label="Prozael"];
+  n2019_4 [label="Mikabeus"];
+  n2019_5 [label="Doctus"];
+  n2019_6 [label="Urbion"];
+  n1995_1 -> n1996_1 -> n1996_4 -> n1997_3 -> n1998_1 -> n1999_1 -> n2000_1 -> n2001_1 -> n2002_1 -> n2013_6 -> n2014_6 -> n2015_6 [color=grey arrowhead=none];
+  n1996_2 -> n1999_4 [color=grey arrowhead=none];
+  n1997_1 -> n1998_3 [color=grey arrowhead=none];
+  n1998_4 -> n1999_3 -> n2000_4 -> n2001_4 [color=grey arrowhead=none];
+  n1999_2 -> n2002_4 [color=grey arrowhead=none];
+  n2000_2 -> n2001_3 [color=grey arrowhead=none];
+  n2002_2 -> n2005_3 [color=grey arrowhead=none];
+  n2003_2 -> n2004_2 [color=grey arrowhead=none];
+  n2003_3 -> n2004_5 -> n2005_4 -> n2006_4 -> n2007_5 [color=grey arrowhead=none];
+  n2003_4 -> n2004_3 -> n2005_5 -> n2007_4 [color=grey arrowhead=none];
+  n2005_2 -> n2006_2 [color=grey arrowhead=none];
+  n2006_3 -> n2007_2 -> n2008_3 [color=grey arrowhead=none];
+  n2007_3 -> n2008_5 -> n2009_4 [color=grey arrowhead=none];
+  n2009_2 -> n2010_2 -> n2011_5 -> n2012_3 -> n2019_1 [color=grey arrowhead=none];
+  n2010_3 -> n2013_1 -> n2014_1 -> n2015_1 [color=grey arrowhead=none];
+  n2010_4 -> n2011_4 [color=grey arrowhead=none];
+  n2010_5 -> n2011_3 -> n2012_5 [color=grey arrowhead=none];
+  n2011_2 -> n2012_2 [color=grey arrowhead=none];
+  n2012_4 -> n2013_5 -> n2014_4 -> n2016_1 -> n2017_1 [color=grey arrowhead=none];
+  n2014_5 -> n2015_2 -> n2016_4 -> n2018_1 [color=grey arrowhead=none];
+  n2015_3 -> n2016_5 -> n2019_3 [color=grey arrowhead=none];
+  n2016_2 -> n2017_3 [color=grey arrowhead=none];
+  n2016_6 -> n2017_6 -> n2018_6 -> n2019_6 [color=grey arrowhead=none];
+  n2017_2 -> n2018_2 [color=grey arrowhead=none];
+  n2018_3 -> n2019_5 [color=grey arrowhead=none];
+  n2018_5 -> n2019_4 [color=grey arrowhead=none];
+  n1995_1 -> n1995_1 [color=green minlen=0];
+  n1995_2 -> n1995_2 [color=green minlen=0];
+  n1996_2 -> n1995_2 [color=green minlen=1];
+  n1996_3 -> n1995_2 [color=green minlen=1];
+  n1997_1 -> n1995_2 [color=green minlen=2];
+  n1997_2 -> n1996_3 [color=green minlen=1];
+  n1998_2 -> n1995_2 [color=green minlen=3];
+  n1998_4 -> n1997_3 [color=green minlen=1];
+  n1999_2 -> n1998_1 [color=green minlen=1];
+  n2000_2 -> n1999_2 [color=green minlen=1];
+  n2000_3 -> n1999_4 [color=green minlen=1];
+  n2001_2 -> n1996_3 [color=green minlen=5];
+  n2002_2 -> n1999_2 [color=green minlen=3];
+  n2002_3 -> n1999_2 [color=green minlen=3];
+  n2003_2 -> n2000_1 [color=green minlen=3];
+  n2003_3 -> n2001_2 [color=green minlen=2];
+  n2003_4 -> n2001_3 [color=green minlen=2];
+  n2003_5 -> n1999_2 [color=green minlen=4];
+  n2004_4 -> n1998_2 [color=green minlen=6];
+  n2005_2 -> n1999_2 [color=green minlen=6];
+  n2006_3 -> n2005_2 [color=green minlen=1];
+  n2006_5 -> n2004_2 [color=green minlen=2];
+  n2007_3 -> n2004_4 [color=green minlen=3];
+  n2008_2 -> n2001_4 [color=green minlen=7];
+  n2008_4 -> n2005_4 [color=green minlen=3];
+  n2009_2 -> n2006_3 [color=green minlen=3];
+  n2009_3 -> n2007_4 [color=green minlen=2];
+  n2009_5 -> n2005_3 [color=green minlen=4];
+  n2010_3 -> n2008_4 [color=green minlen=2];
+  n2010_4 -> n2004_3 [color=green minlen=6];
+  n2010_5 -> n2002_3 [color=green minlen=8];
+  n2011_2 -> n2008_3 [color=green minlen=3];
+  n2012_4 -> n2010_2 [color=green minlen=2];
+  n2013_2 -> n2011_4 [color=green minlen=2];
+  n2013_3 -> n2009_5 [color=green minlen=4];
+  n2013_4 -> n2010_3 [color=green minlen=3];
+  n2014_2 -> n2006_3 [color=green minlen=8];
+  n2014_3 -> n2009_3 [color=green minlen=5];
+  n2014_5 -> n2012_2 [color=green minlen=2];
+  n2015_3 -> n2013_4 [color=green minlen=2];
+  n2015_4 -> n2012_4 [color=green minlen=3];
+  n2015_5 -> n2012_4 [color=green minlen=3];
+  n2016_2 -> n2012_2 [color=green minlen=4];
+  n2016_3 -> n2012_5 [color=green minlen=4];
+  n2016_6 -> n2009_4 [color=green minlen=7];
+  n2017_2 -> n2014_3 [color=green minlen=3];
+  n2017_4 -> n2015_3 [color=green minlen=2];
+  n2017_5 -> n2015_3 [color=green minlen=2];
+  n2018_3 -> n2014_2 [color=green minlen=4];
+  n2018_4 -> n2014_2 [color=green minlen=4];
+  n2018_5 -> n2016_4 [color=green minlen=2];
+  n2019_2 -> n2016_2 [color=green minlen=3];
+  {rank=same n1995_1 n1995_2}
+  {rank=same n1996_1 n1996_2 n1996_3 n1996_4}
+  {rank=same n1997_1 n1997_2 n1997_3}
+  {rank=same n1998_1 n1998_2 n1998_3 n1998_4}
+  {rank=same n1999_1 n1999_2 n1999_3 n1999_4}
+  {rank=same n2000_1 n2000_2 n2000_3 n2000_4}
+  {rank=same n2001_1 n2001_2 n2001_3 n2001_4}
+  {rank=same n2002_1 n2002_2 n2002_3 n2002_4}
+  {rank=same n2003_2 n2003_3 n2003_4 n2003_5}
+  {rank=same n2004_2 n2004_3 n2004_4 n2004_5}
+  {rank=same n2005_2 n2005_3 n2005_4 n2005_5}
+  {rank=same n2006_2 n2006_3 n2006_4 n2006_5}
+  {rank=same n2007_2 n2007_3 n2007_4 n2007_5}
+  {rank=same n2008_2 n2008_3 n2008_4 n2008_5}
+  {rank=same n2009_2 n2009_3 n2009_4 n2009_5}
+  {rank=same n2010_2 n2010_3 n2010_4 n2010_5}
+  {rank=same n2011_2 n2011_3 n2011_4 n2011_5}
+  {rank=same n2012_2 n2012_3 n2012_4 n2012_5}
+  {rank=same n2013_1 n2013_2 n2013_3 n2013_4 n2013_5 n2013_6}
+  {rank=same n2014_1 n2014_2 n2014_3 n2014_4 n2014_5 n2014_6}
+  {rank=same n2015_1 n2015_2 n2015_3 n2015_4 n2015_5 n2015_6}
+  {rank=same n2016_1 n2016_2 n2016_3 n2016_4 n2016_5 n2016_6}
+  {rank=same n2017_1 n2017_2 n2017_3 n2017_4 n2017_5 n2017_6}
+  {rank=same n2018_1 n2018_2 n2018_3 n2018_4 n2018_5 n2018_6}
+  {rank=same n2019_1 n2019_2 n2019_3 n2019_4 n2019_5 n2019_6}
+  {rank = min; n1995_1; n1995_2;}
+}
