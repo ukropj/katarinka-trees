@@ -1,0 +1,60 @@
+digraph op_tree {
+  labelloc=t;
+  fontsize=20
+  label="Ktorý OP bol u koho novicom";
+  rankdir=BT;
+  edge [color=darkgreen dir=back]
+  Benignus -> Benignus;
+  Petardus -> Petardus;
+  Petardus -> Aurélius;
+  Petardus -> Mikeáš;
+  Petardus -> Markus;
+  Petardus -> Anzelm;
+  Mikeáš -> Macedónius;
+  Mikeáš -> Achileus;
+  Benignus -> Metod;
+  Benignus -> Bertrand;
+  Anzelm -> Pyramus;
+  Bertrand -> Minorián;
+  Bertrand -> Dailon;
+  Bertrand -> Rafael;
+  Bertrand -> Jonatán;
+  Bertrand -> Eliáš;
+  Aurélius -> Minas;
+  Benignus -> Pankrác;
+  Achileus -> Pondus;
+  Minorián -> Jeroboám;
+  Metod -> Solomon;
+  Rafael -> Merakus;
+  Pankrác -> Talbot;
+  Jeroboám -> Platan;
+  Pyramus -> Malfin;
+  Eliáš -> Melleus;
+  Dailon -> Servác;
+  Pondus -> Vilinger;
+  Melleus -> Monachus;
+  Melleus -> Nahum;
+  Jeroboám -> Mortimer;
+  Melleus -> Malchus;
+  Vilinger -> Giacomo;
+  Mortimer -> Messien;
+  Malfin -> Urbion;
+  Servác -> Juvilián;
+  Monachus -> Neitos;
+  Giacomo -> Tenebrícius;
+  Platan -> Levidián;
+  Malchus -> Áron;
+  Malchus -> Vigo;
+  Neitos -> Jozes;
+  Neitos -> Silas;
+  Merakus -> Kvintus;
+  Tenebrícius -> Prozael;
+  Nahum -> Doctus;
+  Nahum -> Pronsias;
+  Messien -> Parmenides;
+  Prozael -> Celestín;
+  Prozael -> Šaulon;
+  Vigo -> Avenárius;
+  Áron -> Mikabeus;
+  {rank = min; Benignus; Petardus;}
+}
