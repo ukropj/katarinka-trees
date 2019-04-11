@@ -13,8 +13,24 @@ const minlen = (id1, id2) => {
   return y1 - y2
 }
 
+const colors = {
+  1: '#FF851B',
+  2: '#FF4136',
+  3: '#3D9970',
+  4: '#0074D9',
+  5: '#001F3F',
+  6: '#AAAAAA',
+}
+
+const getWorkshopColor = (id) => {
+  const [year, no] = id.split('_')
+  // 1. druzina vznika v 2003
+  return year < 2003 ? colors[+no + 1] : colors[no]
+}
+
 export const generateWorkshopFatherTree = async () => {
   const {workshops, firstVisit, fathers, years} = await loadFatherData()
+
   const dotStr = [
     'digraph op_druziny_tree {',
     '  labelloc=t;',
@@ -28,10 +44,7 @@ export const generateWorkshopFatherTree = async () => {
     }),
     `  ${toEdge(..._.keys(years))} [color=white];`,
     ..._.map(workshops, ({father}, id) => {
-      return `  ${toNodeId(id)} [label="${father}"];`
-    }),
-    ..._.map(years, (ids, year) => {
-      return `  ${toNodeId(year)} [label="${year}"];`
+      return `  ${toNodeId(id)} [label="${father}", color="${getWorkshopColor(id)}"];`
     }),
     ..._.filter(
       _.map(fathers, (ids, father) => {
@@ -51,6 +64,14 @@ export const generateWorkshopFatherTree = async () => {
         firstVisit[father]
       )}];`
     }),
+    ..._.map(colors, (color, no) => {
+      return `  ${toNodeId(
+        no
+      )} [shape=plaintext fontcolor="${color}" fontsize=20 label="${no}. družina"];`
+    }),
+    ..._.map(years[_.last(_.keys(years))], (id) => {
+      return `  ${toEdge(id, id.split('_')[1])} [color=white];`
+    }),
     ..._.map(years, (ids, year) => {
       // return [`  subgraph cluster_${year} {`,
       //   '    labelloc ="t";',
@@ -60,6 +81,9 @@ export const generateWorkshopFatherTree = async () => {
       // ].join('\n')
       return `  {rank=same ${toNodeId(year)} ${ids.map(toNodeId).join(' ')}}`
     }),
+    `  {rank = max; ${_.keys(colors)
+      .map(toNodeId)
+      .join(' ')}}`,
     `  {rank = min; ${years[Math.min(..._.keys(years))].map(toNodeId).join(' ')}}`,
     '}',
   ].join('\n')

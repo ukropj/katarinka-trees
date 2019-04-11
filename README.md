@@ -3,6 +3,6 @@
 To generate:
 
     yarn gen --f
-    yarn gen --fw
+    yarn gen --wf
 
 To visualize `*.dot` files in `target` folder, use https://dreampuf.github.io/GraphvizOnline/
